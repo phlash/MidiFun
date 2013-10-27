@@ -1,0 +1,15 @@
+<project name="MidiFun" default="compile">
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="bin"/>
+		<javac debug="true" srcdir="src" destdir="bin"/>
+	</target>
+
+	<target name="test">
+		<java classpath="bin" classname="com.ashbysoft.MidiFun" fork="true"/>
+	</target>
+
+</project>
