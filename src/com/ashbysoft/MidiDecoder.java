@@ -16,7 +16,7 @@ public class MidiDecoder {
 	// Common messages
 	private String[] cNames = { "Sysex", "MTC/QF", "SPP", "SSel", "?F4", "?F5",
 			"TuneReq", "Eox", "Clock", "Tick", "Start", "Cont", "Stop", "?FD",
-			"Sense" };
+			"Sense", "Reset" };
 
 	// Sysex manufacturer codes
 	private HashMap<Integer, String> mCodes = new HashMap<Integer, String>();
